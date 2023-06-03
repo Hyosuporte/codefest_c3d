@@ -2,39 +2,39 @@
 ### CODEFEST AD ASTRA 2023
 
 ## Identificación de entidades en noticias
-Para el cumplimiento de este objetivo se hizo uso de la libreria [Spacy](https://spacy.io/) en su ultima versión, random (de python) adicionalmente se hizo un re-entrenamiento del modelo "es_core_news_lg" la version mas avanzada de detecion en **español** donde se adiciono una capa extra que implementa la deteccion e indexación de organizaciones __org__, locaciones __loc__, personas __per__, fechas __dates__, miscelenaea __misc__ e impactos __impact__.
+Para el cumplimiento de este objetivo se hizo uso de la librería [Spacy](https://spacy.io/) en su última versión, random (de python) adicionalmente se hizo un re-entrenamiento del modelo "es_core_news_lg", la versión más avanzada de detección en **español**, donde se adicionó una capa extra que implementa la detección e indexación de organizaciones (__org__), locaciones (__loc__), personas (__per__), fechas (__dates__), miscelánea (__misc__) e impactos (__impact__).
 
-Los valores que se usaron como daatasat de entrenamiento fueron manualmente seleccionados buscando la mayor cantidad de variaciones o ejemplares posibles de cada entidad que a ser indexados. Ademas en cada epoca, de 100, con uso de la libreria random se alimenta el modelo con una entrada aleatoria de los elementos por vez.
+Los valores que se usaron como datos de entrenamiento fueron seleccionados manualmente buscando la mayor cantidad de variaciones o ejemplares posibles de cada entidad a ser indexados. Además, en cada época, de 100, con uso de la librería random se alimenta el modelo con una entrada aleatoria de los elementos por vez.
 
-Finalemnente se obtubo un porcentaje de acertacion (accuracy) con una muestra calificativa de 5 textos nuevos a predecir su respectiva indexacion de un __82,2%__ final.
+Finalmente, se obtuvo un porcentaje de acertación (accuracy) del __82,2%__ con una muestra calificativa de 5 textos nuevos a predecir su respectiva indexación.
 
-Para utilizar este modelo se debe acceder a la siguiente direccion DRIVER https://drive.google.com/file/d/1-9kE9x8eAf72b3uPzuVObtLSvY90ikky/view?usp=sharing y descargar el modelo llamda "trained_model_v2"
+Para utilizar este modelo, se debe acceder a la siguiente dirección: [DRIVER](https://drive.google.com/file/d/1-9kE9x8eAf72b3uPzuVObtLSvY90ikky/view?usp=sharing) y descargar el modelo llamado "trained_model_v2".
 
-Despues se debe clonar el repositorio actual donde podra encontrar el archivo de funciones para el procesamiento de texto y procesamiento de videos
+Después, se debe clonar el repositorio actual donde se encontrará el archivo de funciones para el procesamiento de texto y procesamiento de videos. En el archivo llamado "textAnaly" se encontrarán los métodos para el procesamiento de datos.
 
-el archivo llamado "textAnaly" se encontraran los metodos para el procesamiento de datos
+Ahora, el archivo comprimido que se descargó del DRIVE debe moverse dentro de la carpeta que se creó al clonar el repositorio y debe quedar como se presenta en la imagen:
 
-Ahora el archivo comprimido que descargo del DRIVE muevalo dentro de la carpeta que se creo al clonar el repositorio y debe quedar como se presenta en la imagen
 ![image](https://github.com/Hyosuporte/codefest_c3d/assets/99928498/770428ab-b79a-469d-be02-e097c007a4ef)
 
-Seguido de esto descomprima la carpeta "trained_model_v2" dentro de la carpeta del repositorio y luego podra borrar el archivo comprimdo como se observa en la imagne
+Seguido de esto, descomprima la carpeta "trained_model_v2" dentro de la carpeta del repositorio y luego podrá borrar el archivo comprimido como se observa en la imagen:
 
 ![image](https://github.com/Hyosuporte/codefest_c3d/assets/99928498/0bbd0b0c-4280-46e5-a143-77c46a8c4cc4)
 
-Despues de esto debera abrir una terminal de python dentro del proyecto he installar las siguientes dependencias para poder trabajar que son las siguientes
+Después de esto, deberá abrir una terminal de python dentro del proyecto e instalar las siguientes dependencias para poder trabajar:
 
 pip install beautifulsoup4
 pip install html2text
 pip install requests
 pip install spacy
 
- y ya podra comenzar a usar las funciones de la libreria
+Ahora ya podrá comenzar a usar las funciones de la librería.
+
 Uso del modelo desde texto plano
 ------
-#### Parametros
-##### text: texto a analiazr en formato string ("texto de ejemplo")
-##### output_path: ruta absoluta donde se guarga el archivo ("C:\Users\Cat\Documents\")
-_El nombre del archivo de salida sera **data.json** y en cada ejecucion se sobreescribira el archivo_
+#### Parámetros
+##### text: texto a analizar en formato string ("texto de ejemplo")
+##### output_path: ruta absoluta donde se guarda el archivo ("C:\Users\Cat\Documents\")
+_El nombre del archivo de salida será **data.json** y en cada ejecución se sobreescribirá el archivo_
 ```python
 txtc3d.ner_from_str(text,output_path)
 ```
