@@ -8,11 +8,27 @@ Los valores que se usaron como daatasat de entrenamiento fueron manualmente sele
 
 Finalemnente se obtubo un porcentaje de acertacion (accuracy) con una muestra calificativa de 5 textos nuevos a predecir su respectiva indexacion de un __82,2%__ final.
 
-Para utilizar este modelo se debe acceder a la siguiente direccion [modeloTextoC3Dteam](https://test.pypi.org/project/textocodefestc3d/1.0.4/) y ejeutar la siguiente serie de comandos:
-```python
-pip install -i https://test.pypi.org/simple/ textocodefestc3d==1.0.4
-import textocodefestc3d as txtc3d
-```
+Para utilizar este modelo se debe acceder a la siguiente direccion DRIVER https://drive.google.com/file/d/1-9kE9x8eAf72b3uPzuVObtLSvY90ikky/view?usp=sharing y descargar el modelo llamda "trained_model_v2"
+
+Despues se debe clonar el repositorio actual donde podra encontrar el archivo de funciones para el procesamiento de texto y procesamiento de videos
+
+el archivo llamado "textAnaly" se encontraran los metodos para el procesamiento de datos
+
+Ahora el archivo comprimido que descargo del DRIVE muevalo dentro de la carpeta que se creo al clonar el repositorio y debe quedar como se presenta en la imagen
+![image](https://github.com/Hyosuporte/codefest_c3d/assets/99928498/770428ab-b79a-469d-be02-e097c007a4ef)
+
+Seguido de esto descomprima la carpeta "trained_model_v2" dentro de la carpeta del repositorio y luego podra borrar el archivo comprimdo como se observa en la imagne
+
+![image](https://github.com/Hyosuporte/codefest_c3d/assets/99928498/0bbd0b0c-4280-46e5-a143-77c46a8c4cc4)
+
+Despues de esto debera abrir una terminal de python dentro del proyecto he installar las siguientes dependencias para poder trabajar que son las siguientes
+
+pip install beautifulsoup4
+pip install html2text
+pip install requests
+pip install spacy
+
+ y ya podra comenzar a usar las funciones de la libreria
 Uso del modelo desde texto plano
 ------
 #### Parametros
