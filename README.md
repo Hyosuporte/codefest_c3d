@@ -27,7 +27,12 @@ pip install html2text
 pip install requests
 pip install spacy
 
-Ahora ya podrá comenzar a usar las funciones de la librería.
+Ahora ya podrá comenzar a usar las funciones de la librería, solo debe coger su proyecto python importar la libreria con la siguiente instruccion
+
+```python
+import textAnaly as txtc3d
+```
+con esta importacion y definicion de alias de la libreria podra llamar a los metodos como se muestra adelante y los datos a enviarle a las funciones 
 
 Uso del modelo desde texto plano
 ------
