@@ -29,4 +29,3 @@ python detect.py --source 0  # webcam
 #!python detect.py --weights run/.pt --img 640 --conf 0.25 --source data/images
 # display.Image(filename='runs/detect/exp/zidane.jpg', width=600)
 #Se pone el directorio donde se encuentra el dataset
-
